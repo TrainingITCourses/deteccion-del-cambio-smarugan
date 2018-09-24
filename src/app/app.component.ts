@@ -59,7 +59,6 @@ export class AppComponent {
             if (!includedLaunch && mission['agencies'] !== null) {
               for (const agency of mission['agencies']) {
                 if (agency['id'] === critery['value']['id']) {
-                  console.log(launch);
                   filtered.push(launch);
                   includedLaunch = true;
                   break;
@@ -75,12 +74,10 @@ export class AppComponent {
 
   private filterByType(critery) {
     this.apiService.getLaunches$().subscribe(launches => {
-      console.log('LAUNCHES: ', launches);
       const filtered = [];
       for (const launch of launches) {
         if (launch['missions'] !== null) {
           for (const mission of launch['missions']) {
-            console.log(mission['id'] === critery['value']['id']);
             if (mission['type'] === critery['value']['id']) {
               filtered.push(launch);
               break;
