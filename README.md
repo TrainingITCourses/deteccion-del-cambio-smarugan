@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #### Detección del cambio  
 
 **Precondiciones**
@@ -31,7 +30,3 @@
 
 9.  Uso del patrón contenedor / presentadores
 10.  Uso de la estrategia OnPush en los presentadores
-=======
-# assets_angular-speed
-Ficheros json con datos base para los ejercicios del curso de Angular Speed
->>>>>>> parent of c5e5814... First commit with ng Angular template
