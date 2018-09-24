@@ -1,27 +1,32 @@
-# DeteccionDelCambioSmarugan
+#### Detección del cambio  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+**Precondiciones**
 
-## Development server
+1.  Crear una aplicación Angular 6 con CLI 6
+2.  Una sola página (sin enrutado), en un único módulo
+3.  Sin ningún framework css
+4.  Tomar los datos desde los assets adjuntos en esta carpeta
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+	* Librería de lanzamientos
+	* Agencias responsables
+	* Tipos de misiones
 
-## Code scaffolding
+**Funcionalidad**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5.  Crear un buscador que permita seleccionar un criterio de búsqueda
 
-## Build
+	* Estado
+	* Agencia
+	* Tipo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+6.  En función del criterio mostrar los valores posibles de ese criterio
+7.  Al seleccionar un valor del criterio filtrar la librería de lanzamientos
+8.  Mostrar el resultado del filtro
 
-## Running unit tests
+	* Un listado con los nombre de los lanzamientos
+	* Un contador con el número de resultados obtenidos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Requerimientos**
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+9.  Uso del patrón contenedor / presentadores
+10.  Uso de la estrategia OnPush en los presentadores
